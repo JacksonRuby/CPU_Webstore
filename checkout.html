@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Head info -->
+        <meta charset="utf-8">
+        <title>CPU's R US - Checkout</title>
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <link rel="stylesheet" href="styles/master.css">
+        <link rel="stylesheet" href="styles/checkout.css">
+        <script src="js/checkout.js"></script>
+    </head>
+    <body onload="loadCart()">
+        <header>
+            <div class="headerText"> 
+                <br>               
+                <h1>CPU's R US</h1>
+                <h2>The one stop shop for all of your proccessing needs</h2>
+            </div>            
+        </header>
+        <main>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a id="linkCheckout" href="checkout.html">Checkout</a>
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+                        <div class="cartItems">
+                            <ul id="cartList">
+
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="formFormatting">
+                            <h3>Customer Information</h3>
+                            <form>
+                                <input type="text" id="txtName" placeholder="Name">
+                                <p id="txtNameError"></p>
+                                <br>
+                                <input type="email" id="txtEmail" placeholder="Email">
+                                <p id="txtEmailError"></p>
+                                <br>
+                                <input type="tel" id="txtPhone" placeholder="Phone">
+                                <p id="txtPhoneError"></p>
+                                <br>
+                                <input type="text" id="txtAddress" placeholder="Address">
+                                <p id="txtAddressError"></p>
+                                <br>
+                                <input type="text" id="txtCity" placeholder="City">
+                                <p id="txtCityError"></p>
+                                <br>
+                                <input type="text" id="txtPostCode" placeholder="Postal Code">
+                                <p id="txtPostCodeError"></p>
+                                <br>
+                                <select id="txtProvince" onchange="calculateTax()">
+                                    <option value="default">Province/Territory</option>
+                                    <option value="alberta">Alberta</option>
+                                    <option value="britishColumbia">British Columbia</option>
+                                    <option value="manitoba">Manitoba</option>
+                                    <option value="newBrunswick">New Brunswick</option>
+                                    <option value="newfoundlandAndLabrador">Newfoundland and Labrador</option>
+                                    <option value="northwestTerritories">Northwest Territoties</option>
+                                    <option value="novaScotia">Nova Scotia</option>
+                                    <option value="nunavut">Nunavut</option>
+                                    <option value="ontario">Ontario</option>
+                                    <option value="princeEdwardIsland">Prince Endward Island</option>
+                                    <option value="quebec">Quebec</option>
+                                    <option value="saskatchewan">Saskatchewan</option>
+                                    <option value="yukon">Yukon</option>
+                                </select>
+                                <p id="txtProvinceError"></p>
+                                <br>
+                                <select id="txtDeliveryTime" onchange="calculateShipping()">
+                                    <option value="default">Delivery Time</option>
+                                    <option value="1Day">1 Day</option>
+                                    <option value="2Days">2 Days</option>
+                                    <option value="3Days">3 Days</option>
+                                    <option value="4Days">4 Days</option>
+                                </select>
+                                <p id="txtDeliveryTimeError"></p>
+                                <br>
+                                <input type="submit">
+                            </form>
+                        </div>            
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <p>&copy; Jackson Ruby 2019</p>
+        </footer>
+    </body>
+</html>

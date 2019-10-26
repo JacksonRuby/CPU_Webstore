@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Head info -->
+        <meta charset="utf-8">
+        <title>CPU's R US - Products</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="styles/master.css">
+        <link rel="stylesheet" href="styles/products.css">
+        <script src="js/products.js"></script>
+    </head>
+    <body onload="loadCart()">
+        <header>
+            <div class="headerText"> 
+                <br>               
+                <h1>CPU's R US</h1>
+                <h2>The one stop shop for all of your proccessing needs</h2>
+            </div>            
+        </header>
+        <main>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a id="linkCheckout" href="checkout.html">Checkout</a>
+            </div>
+            
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/i5.png">
+                        <h3>Intel Core i5-9600K</h3>
+                        <h4>$389.99</h4>
+                        <ul>
+                            <li>6 Cores</li>
+                            <li>3.7 Ghz (Turbo 4.6 GHz)</li>
+                            <li>Socket LGA 1151</li>
+                        </ul>
+                        <button id="btn_i5" onclick="addi5ToCart()">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="img/i7.png">
+                        <h3>Intel Core i7-9700K</h3>
+                        <h4>$579.99</h4>
+                        <ul>
+                            <li>8 Cores</li>
+                            <li>3.6 Ghz (Turbo 4.9 GHz)</li>
+                            <li>Socket LGA 1151</li>
+                        </ul>
+                        <button id="btn_i7" onclick="addi7ToCart()">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="img/i9.png">
+                        <h3>Intel Core i9-9900K</h3>
+                        <h4>$749.99</h4>
+                        <ul>
+                            <li>8 Cores</li>
+                            <li>3.6 Ghz (Turbo 5.0 GHz)</li>
+                            <li>Socket LGA 1151</li>
+                        </ul>
+                        <button id="btn_i9" onclick="addi9ToCart()">Add to Cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/ryzen7.png">
+                        <h3>AMD Ryzen 7 3800X</h3>
+                        <h4>$519.99</h4>
+                        <ul>
+                            <li>8 Cores</li>
+                            <li>3.9 Ghz (Turbo 4.5 GHz)</li>
+                            <li>Socket AM4</li>
+                        </ul>
+                        <button id="btn_ryzen7" onclick="addRyzen7ToCart()">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="img/ryzen9.png">
+                        <h3>AMD Ryzen 9 3950X</h3>
+                        <h4>$749.99</h4>
+                        <ul>
+                            <li>16 Cores</li>
+                            <li>3.5 Ghz (Turbo 4.7 GHz)</li>
+                            <li>Socket AM4</li>
+                        </ul>
+                        <button id="btn_ryzen9" onclick="addRyzen9ToCart()">Add to Cart</button>
+                    </td>
+                    <td>
+                        <img src="img/epyc.png">
+                        <h3>AMD EPYC 7742</h3>
+                        <h4>$6950</h4>
+                        <ul>
+                            <li>64 Cores</li>
+                            <li>2.25 Ghz (Turbo 3.4 GHz)</li>
+                            <li>Socket SP3</li>
+                        </ul>
+                        <button id="btn_epyc" onclick="addEpycToCart()">Add to Cart</button>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <p>&copy; Jackson Ruby 2019</p>
+        </footer>
+    </body>
+</html>
